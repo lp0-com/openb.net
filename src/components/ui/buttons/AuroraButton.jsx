@@ -6,8 +6,8 @@ import {
 } from "framer-motion";
 import { useEffect } from "react";
 
-// Using colors from tailwind config primary and roow palettes
-const COLORS = ["#F08C00", "#FFD43B", "#2d8f85", "#637c54"];
+// Using colors from tailwind config primary and secondary palettes
+const COLORS = ["#2563EB", "#1D4ED8", "#F97316", "#EA580C"];
 
 const AuroraButton = ({ children }) => {
   const color = useMotionValue(COLORS[0]);
@@ -35,7 +35,7 @@ const AuroraButton = ({ children }) => {
         border,
         boxShadow,
       }}
-      className="w-fit rounded-full bg-shade-900/10 px-4 py-2 font-bold uppercase text-inherit transition-colors hover:bg-shade-900/50"
+      className="w-fit rounded-full bg-white px-4 py-2 font-bold uppercase text-black transition-colors hover:bg-gray-100"
     >
       {children}
     </motion.button>
